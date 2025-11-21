@@ -1,0 +1,84 @@
+/* custom fonts */
+
+@font-face {
+  font-family: "Tangerine";
+
+  src: url('./fonts/Tangerine-Regular.woff2') format('woff2'),
+       url('./fonts/Tangerine-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tangerine";
+
+  src: url('./fonts/Tangerine-Bold.woff2') format('woff2'),
+       url('./fonts/Tangerine-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoiretOne-Regular";
+
+  src: url('./fonts/PoiretOne-Regular.woff2') format('woff2'),
+       url('./fonts/PoiretOne-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* styling */
+
+body {
+    font-family: "PoiretOne-Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:hsl(330, 100%, 96%);
+    font-size: medium;
+}
+
+header {
+    font-family: "Tangerine", sans-serif;
+    background-color: hsl(329, 100%, 92%);
+    padding: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+#unityContainer {
+    width: 55%;
+    height: 0;
+    padding-bottom: 33%;
+    margin: 0 auto 2rem auto;
+    background-color: #000; /* placeholder before WebGL build */
+}
+
+#description h4 {
+    /* Add space above and below the subtitle for separation */
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: hsl(0, 0%, 40%); 
+    font-style: italic;
+}
+
+/* Reset <h2> spacing so subtitle is closer to it */
+#description h2 {
+    margin-bottom: 0.5rem;
+}
+
+#description {
+    width: 55%;
+    font-family: PoiretOne-Regular, sans-serif;
+    background-color: hsl(329, 0%, 100%);
+    padding: 2rem;
+    text-align: left;
+    margin: 0 auto;
+}
