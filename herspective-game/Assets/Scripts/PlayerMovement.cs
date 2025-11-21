@@ -4,12 +4,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    private Rigidbody2D rb;
+    private Rigidbody rb;
     private Vector2 movement;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -22,7 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        Vector2 pos2D = new Vector2(rb.position.x, rb.position.y);
         // Apply movement on the physics step
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(pos2D + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
