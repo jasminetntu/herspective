@@ -130,7 +130,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -144,7 +144,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,7 +168,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -922,7 +922,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      man_spritesheet_0: -1344184860337944350
+      man_spritesheet_1: 41610644243943867
+      man_spritesheet_10: 699547456396256908
+      man_spritesheet_11: -9179569146450571145
+      man_spritesheet_12: 5704322417868003458
+      man_spritesheet_13: 6530242298530018177
+      man_spritesheet_14: -2981128252858742749
+      man_spritesheet_15: 1972499037511457998
+      man_spritesheet_16: -1144009240132813607
+      man_spritesheet_17: -7613187318152176424
+      man_spritesheet_18: -4710970725820300139
+      man_spritesheet_19: -2532069901236011633
+      man_spritesheet_2: 2066033442309861243
+      man_spritesheet_20: 6229207189075978573
+      man_spritesheet_21: -9192368167084137702
+      man_spritesheet_22: -8346043138948210690
+      man_spritesheet_23: 5587505844718169936
+      man_spritesheet_24: 5014762132044627408
+      man_spritesheet_25: -3882002729647249668
+      man_spritesheet_26: 8748198356493793162
+      man_spritesheet_27: 2002933985696480226
+      man_spritesheet_28: 4846949462598093376
+      man_spritesheet_29: 5178403123278852563
+      man_spritesheet_3: 8882840014353275909
+      man_spritesheet_30: -1343680320552545948
+      man_spritesheet_31: 7676598023108782491
+      man_spritesheet_4: 8402745220272285876
+      man_spritesheet_5: -7586829612826568258
+      man_spritesheet_6: -105050267579481621
+      man_spritesheet_7: -2619736434110575146
+      man_spritesheet_8: -927394323256322580
+      man_spritesheet_9: 5641480740610682737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

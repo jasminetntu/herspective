@@ -4,6 +4,7 @@ public class FollowObject : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] Rigidbody rb;
+    [SerializeField] SpriteRenderer sr;
 
     public bool isFollowing = false;
     public float maxDistance = 4f;
@@ -12,12 +13,13 @@ public class FollowObject : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        LookAtTarget();
+        //LookAtTarget();
         
     }
 
@@ -61,5 +63,10 @@ public class FollowObject : MonoBehaviour
             Debug.Log("Player enter");
             startFollowing();
         }
+    }
+
+    void FlipHorizontally()
+    {
+        sr.flipX = !sr.flipX;
     }
 }

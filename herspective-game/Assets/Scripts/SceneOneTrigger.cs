@@ -12,17 +12,29 @@ public class SceneOneTrigger : MonoBehaviour
             CamFollow();
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            camFollow = true;
-        }
-    }
 
     void CamFollow()
     {
         Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
         mainCamera.transform.position = new Vector3(playerPos.x, mainCamera.transform.position.y, mainCamera.transform.position.z);
+    }
+
+    public void toggleCameraFollow()
+    {
+        camFollow = !camFollow;
+    }
+
+    public void AddSpeed()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerMovement pm = player.GetComponent<PlayerMovement>();
+        pm.moveSpeed += 1f;
+    }
+
+    public void Run()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerMovement pm = player.GetComponent<PlayerMovement>();
+        pm.moveSpeed += 3f;
     }
 }
