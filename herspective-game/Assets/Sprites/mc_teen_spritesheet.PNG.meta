@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mc_teen_spritesheet_0: -7336533703794722101
+      mc_teen_spritesheet_1: -5192653721047914223
+      mc_teen_spritesheet_2: -8708415525282491054
+      mc_teen_spritesheet_3: -8640280725915677607
+      mc_teen_spritesheet_4: -4944507275303532801
+      mc_teen_spritesheet_5: 3226336141061256556
+      mc_teen_spritesheet_6: -5134840933297025012
+      mc_teen_spritesheet_7: -5276858800523229200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

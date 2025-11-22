@@ -17,7 +17,6 @@ public class Interactable : MonoBehaviour
             if (isPassive)
             {
                 Interact();
-                Debug.Log(collision.gameObject + " has collidede with " + this.gameObject);
             }
             else
             {
