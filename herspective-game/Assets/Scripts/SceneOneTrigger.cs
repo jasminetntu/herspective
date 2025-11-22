@@ -23,6 +23,6 @@ public class SceneOneTrigger : MonoBehaviour
     void CamFollow()
     {
         Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-        mainCamera.transform.position = new Vector3(playerPos.x, playerPos.y, mainCamera.transform.position.z);
+        mainCamera.transform.position = new Vector3(playerPos.x, mainCamera.transform.position.y, mainCamera.transform.position.z);
     }
 }
