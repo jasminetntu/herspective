@@ -18,6 +18,11 @@ public class FollowObject : MonoBehaviour
     void Update()
     {
         LookAtTarget();
+        
+    }
+
+    private void LateUpdate()
+    {
         if (isFollowing)
         {
             Follow();
@@ -40,7 +45,7 @@ public class FollowObject : MonoBehaviour
         {
             Vector2 dir = new Vector2(CalculateDirection().x, 0);
             Vector2 pos2D = new Vector2(rb.position.x, rb.position.y);
-            rb.MovePosition(pos2D + dir * moveSpeed * Time.fixedDeltaTime); 
+            rb.AddForce(dir * moveSpeed);
         }
     }
 

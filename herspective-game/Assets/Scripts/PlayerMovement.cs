@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sr;
     private Vector2 movement;
     private Animator animator;
+    public bool isActive = true;
 
     void Start()
     {
@@ -54,7 +55,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move3D = new Vector3(movement.x, movement.y, 0f);
 
         // Apply movement on the physics step
-        rb.MovePosition(pos3D + move3D * moveSpeed * Time.fixedDeltaTime);
+        if (isActive)
+        {
+            rb.MovePosition(pos3D + move3D * moveSpeed * Time.fixedDeltaTime);
+        }
     }
 
     // Optional helper if you ever want to manually toggle

@@ -9,14 +9,16 @@ public class Interactable : MonoBehaviour
     [SerializeField] public TextMeshProUGUI interactText;
     public AudioClip interactSound;
     public bool isPassive = false;
+    public bool hasTriggered = false;
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (isPassive)
+            if (isPassive && !hasTriggered)
             {
                 Interact();
+                hasTriggered = true;
             }
             else
             {
