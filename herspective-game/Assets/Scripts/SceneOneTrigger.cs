@@ -2,38 +2,27 @@ using UnityEngine;
 
 public class SceneOneTrigger : MonoBehaviour
 {
-    public GameObject[] backgrounds;
-    public bool moveBackground = false;
+    public Camera mainCamera;
+    public bool camFollow = false;
 
-    void Start()
+    private void Update()
     {
-        // empty
-    }
-
-    void Update()
-    {
-        float moveX = Input.GetAxisRaw("Horizontal");
-
-        if (moveBackground && moveX > 0)
+        if (camFollow)
         {
-            MoveBackgrounds(moveX);
+            CamFollow();
         }
     }
-
-    void MoveBackgrounds(float moveX)
-    {
-        for (int i = 0; i < backgrounds.Length; i++)
-        {
-            backgrounds[i].transform.position += new Vector3(-moveX * Time.deltaTime, 0, 0);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)  // <- 3D collider; often wrong in 2D projects
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerMovement>().isActive = false;
-            moveBackground = true;
+            camFollow = true;
         }
+    }
+
+    void CamFollow()
+    {
+        Vector3 playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        mainCamera.transform.position = new Vector3(playerPos.x, playerPos.y, mainCamera.transform.position.z);
     }
 }
