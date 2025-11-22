@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     public bool onlyLeft = false;
     public bool onlyRight = false;
 
+    [Header("Very cool settings part")]
+    [SerializeField] GameObject settingsPanel;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -25,6 +28,25 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (settingsPanel.activeSelf)
+            {
+                CloseSettings();
+            }
+            else
+            {
+                OpenSettings();
+            }
+        }
+
+        if (settingsPanel.activeSelf)
+        {
+            animator.SetBool("isWalking", false);
+            return;
+        }
+        ;
+
         // Raw input (what the player is trying to do)
         float rawX = Input.GetAxisRaw("Horizontal");  // A/D or Left/Right
 
@@ -58,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 pos3D = rb.position;
         Vector3 move3D = new Vector3(movement.x, movement.y, 0f);
 
-        if (isActive)
+        if (isActive && !settingsPanel.activeSelf)
         {
             // Movement already respects onlyLeft / onlyRight
             rb.MovePosition(pos3D + move3D * moveSpeed * Time.fixedDeltaTime);
@@ -80,8 +102,19 @@ public class PlayerMovement : MonoBehaviour
         isActive = false;
         FlipHorizontally();
         animator.SetBool("isWalking", false);
+
         yield return new WaitForSeconds(delay);
         FlipHorizontally();
         isActive = true;
+    }
+
+    public void OpenSettings()
+    {
+        settingsPanel.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false);
     }
 }
