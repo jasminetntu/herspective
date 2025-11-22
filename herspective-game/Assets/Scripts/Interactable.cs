@@ -10,24 +10,24 @@ public class Interactable : MonoBehaviour
     public AudioClip interactSound;
     public bool isPassive = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (!isPassive)
-            {
-                //isInRange = true;
-                //interactText.gameObject.SetActive(true);
-            }
-            else
+            if (isPassive)
             {
                 Interact();
                 Debug.Log(collision.gameObject + " has collidede with " + this.gameObject);
             }
+            else
+            {
+                //isInRange = true;
+                //interactText.gameObject.SetActive(true);
+            }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit(Collider collision)
     {
         if (!isPassive)
         {
