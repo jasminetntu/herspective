@@ -8,12 +8,15 @@ public class FollowObject : MonoBehaviour
 
     public bool isFollowing = false;
     public float maxDistance = 4f;
-    public float moveSpeed = 5f;
+    public float moveSpeed = 1f;
+
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -51,12 +54,21 @@ public class FollowObject : MonoBehaviour
 
     void Follow()
     {
-        if ((target.transform.position - transform.position).magnitude > maxDistance)
+        bool isMoving = (target.transform.position - transform.position).magnitude > maxDistance;
+
+        if (isMoving)
         {
             Vector2 dir = new Vector2(CalculateDirection().x, 0);
             Vector2 pos2D = new Vector2(rb.position.x, rb.position.y);
             rb.AddForce(dir * moveSpeed);
+            animator.SetBool("isWalking", isMoving);
         }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        animator.SetBool("isWalking", isMoving);
     }
 
     public void startFollowing()
