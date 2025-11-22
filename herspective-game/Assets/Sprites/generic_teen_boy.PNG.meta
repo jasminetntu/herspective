@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 4e22ec1794d9f47c9b8885f9d02776f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7870994275805886867
+    second: teen_boy_generic_0
+  - first:
+      213: -8714024899273262678
+    second: teen_boy_generic_1
+  - first:
+      213: -153910731319988901
+    second: teen_boy_generic_2
+  - first:
+      213: 5150124420044873510
+    second: teen_boy_generic_3
+  - first:
+      213: -1708805004916134514
+    second: teen_boy_generic_4
+  - first:
+      213: 323333222975453872
+    second: teen_boy_generic_5
+  - first:
+      213: -1684193647404480971
+    second: teen_boy_generic_6
+  - first:
+      213: -2857683488258298928
+    second: teen_boy_generic_7
+  - first:
+      213: 9011836269588033083
+    second: teen_boy_generic_8
+  - first:
+      213: 6720522326299902932
+    second: teen_boy_generic_9
+  - first:
+      213: -3918506165169446771
+    second: teen_boy_generic_10
+  - first:
+      213: 963303486681862216
+    second: teen_boy_generic_11
+  - first:
+      213: 6823032691362537905
+    second: teen_boy_generic_12
+  - first:
+      213: -1582113560474653158
+    second: teen_boy_generic_13
+  - first:
+      213: -343166214176955548
+    second: teen_boy_generic_14
+  - first:
+      213: 1581727435398638764
+    second: teen_boy_generic_15
+  - first:
+      213: -86648408619608982
+    second: teen_boy_generic_16
+  - first:
+      213: -1851638342461712725
+    second: teen_boy_generic_17
+  - first:
+      213: -6360898664590841397
+    second: teen_boy_generic_18
+  - first:
+      213: -5192775437584473658
+    second: teen_boy_generic_19
+  - first:
+      213: -3944657995720674572
+    second: teen_boy_generic_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: teen_boy_generic_0
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 41
+        width: 419
+        height: 1506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d660571986c94c290800000000000000
+      internalID: -7870994275805886867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_1
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 37
+        width: 729
+        height: 1518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa978e2e580911780800000000000000
+      internalID: -8714024899273262678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_2
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 51
+        width: 975
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d2d8c51033dddf0800000000000000
+      internalID: -153910731319988901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_3
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 139
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fd6dd9fdae87740800000000000000
+      internalID: 5150124420044873510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_4
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 37
+        width: 728
+        height: 1518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d6093d6ea1948e0800000000000000
+      internalID: -1708805004916134514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_5
+      rect:
+        serializedVersion: 2
+        x: 3723
+        y: 41
+        width: 422
+        height: 1506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bab88b6ad5bc7400800000000000000
+      internalID: 323333222975453872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_6
+      rect:
+        serializedVersion: 2
+        x: 4317
+        y: 37
+        width: 729
+        height: 1518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5368c790dca80a8e0800000000000000
+      internalID: -1684193647404480971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_7
+      rect:
+        serializedVersion: 2
+        x: 5195
+        y: 50
+        width: 976
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db6dd112087758d0800000000000000
+      internalID: -2857683488258298928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_8
+      rect:
+        serializedVersion: 2
+        x: 6168
+        y: 139
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ea6c62759701d70800000000000000
+      internalID: 9011836269588033083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_9
+      rect:
+        serializedVersion: 2
+        x: 6417
+        y: 43
+        width: 729
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3003ce277144d50800000000000000
+      internalID: 6720522326299902932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_10
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 98
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80a5e6676bae99c0800000000000000
+      internalID: -3918506165169446771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_11
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 98
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8405196da675e5d00800000000000000
+      internalID: 963303486681862216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_12
+      rect:
+        serializedVersion: 2
+        x: 5041
+        y: 98
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1aa83351840be50800000000000000
+      internalID: 6823032691362537905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_13
+      rect:
+        serializedVersion: 2
+        x: 7141
+        y: 99
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e649169143b0ae0800000000000000
+      internalID: -1582113560474653158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_14
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46321197524dc3bf0800000000000000
+      internalID: -343166214176955548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_15
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 37
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacec6ed8bc63f510800000000000000
+      internalID: 1581727435398638764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_16
+      rect:
+        serializedVersion: 2
+        x: 4532
+        y: 40
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6410ef3bb92ccef0800000000000000
+      internalID: -86648408619608982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_17
+      rect:
+        serializedVersion: 2
+        x: 5342
+        y: 38
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba69319ecb8ad46e0800000000000000
+      internalID: -1851638342461712725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_18
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 40
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc96ec4bd5c89b7a0800000000000000
+      internalID: -6360898664590841397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_19
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 40
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c16764804e8fe7b0800000000000000
+      internalID: -5192775437584473658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teen_boy_generic_20
+      rect:
+        serializedVersion: 2
+        x: 6636
+        y: 37
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f23aacd372c149c0800000000000000
+      internalID: -3944657995720674572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      teen_boy_generic_0: -7870994275805886867
+      teen_boy_generic_1: -8714024899273262678
+      teen_boy_generic_10: -3918506165169446771
+      teen_boy_generic_11: 963303486681862216
+      teen_boy_generic_12: 6823032691362537905
+      teen_boy_generic_13: -1582113560474653158
+      teen_boy_generic_14: -343166214176955548
+      teen_boy_generic_15: 1581727435398638764
+      teen_boy_generic_16: -86648408619608982
+      teen_boy_generic_17: -1851638342461712725
+      teen_boy_generic_18: -6360898664590841397
+      teen_boy_generic_19: -5192775437584473658
+      teen_boy_generic_2: -153910731319988901
+      teen_boy_generic_20: -3944657995720674572
+      teen_boy_generic_3: 5150124420044873510
+      teen_boy_generic_4: -1708805004916134514
+      teen_boy_generic_5: 323333222975453872
+      teen_boy_generic_6: -1684193647404480971
+      teen_boy_generic_7: -2857683488258298928
+      teen_boy_generic_8: 9011836269588033083
+      teen_boy_generic_9: 6720522326299902932
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
