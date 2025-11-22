@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -9,6 +10,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private Animator animator;
     public bool isActive = true;
+    public float turnDelay = 1f;
+
+    [Header("ControlLocks")]
+    public bool onlyLeft = false;
+    public bool onlyRight = false;
 
     void Start()
     {
@@ -19,51 +25,63 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Read input every frame
-        float moveX = Input.GetAxisRaw("Horizontal");  // A/D or Left/Right
+        // Raw input (what the player is trying to do)
+        float rawX = Input.GetAxisRaw("Horizontal");  // A/D or Left/Right
 
-        // Set movement vector (X only for now)
-        movement = new Vector2(moveX, 0f).normalized;
+        // Effective input (what they're actually allowed to do)
+        float effectiveX = rawX;
 
-        //ANIMATIONS
-        if (moveX != 0)
-        {
-            animator.SetBool("isWalking", true);
-        }
-        else
-        {
-            animator.SetBool("isWalking", false);
-        }
+        if (onlyLeft && effectiveX > 0)
+            effectiveX = 0;
+        if (onlyRight && effectiveX < 0)
+            effectiveX = 0;
 
-        // Flip sprite based on direction
-        if (moveX > 0.01f)
+        // This is what physics will use
+        movement = new Vector2(effectiveX, 0f).normalized;
+
+        if (isActive)
         {
-            sr.flipX = false; // facing right
-        }
-        else if (moveX < -0.01f)
-        {
-            sr.flipX = true;  // facing left
+            // isMoving is based on allowed movement, NOT raw input
+            bool isMoving = Mathf.Abs(effectiveX) > 0.01f;
+            animator.SetBool("isWalking", isMoving);
+
+            // Facing is based on raw input so you can still "turn in place"
+            if (Mathf.Abs(rawX) > 0.01f)
+            {
+                sr.flipX = rawX < 0f;  // left if negative, right if positive
+            }
         }
     }
 
     void FixedUpdate()
     {
-        // Current 3D position
         Vector3 pos3D = rb.position;
-
-        // Convert 2D movement (x,y) to 3D (x,y,0)
         Vector3 move3D = new Vector3(movement.x, movement.y, 0f);
 
-        // Apply movement on the physics step
         if (isActive)
         {
+            // Movement already respects onlyLeft / onlyRight
             rb.MovePosition(pos3D + move3D * moveSpeed * Time.fixedDeltaTime);
         }
     }
 
-    // Optional helper if you ever want to manually toggle
+    public void TriggerTurn()
+    {
+        StartCoroutine(DisableMovementTemporarily(turnDelay));
+    }
+
     void FlipHorizontally()
     {
         sr.flipX = !sr.flipX;
+    }
+
+    IEnumerator DisableMovementTemporarily(float delay)
+    {
+        isActive = false;
+        FlipHorizontally();
+        animator.SetBool("isWalking", false);
+        yield return new WaitForSeconds(delay);
+        FlipHorizontally();
+        isActive = true;
     }
 }

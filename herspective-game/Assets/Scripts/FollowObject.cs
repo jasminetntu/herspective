@@ -19,7 +19,7 @@ public class FollowObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //LookAtTarget();
+        LookAtTarget();
         
     }
 
@@ -38,7 +38,15 @@ public class FollowObject : MonoBehaviour
 
     void LookAtTarget()
     {
-        transform.rotation = Quaternion.LookRotation(CalculateDirection());
+        //transform.rotation = Quaternion.LookRotation(CalculateDirection());
+        if (CalculateDirection().x > 0 && sr.flipX)
+        {
+            FlipHorizontally();
+        }
+        else if (CalculateDirection().x < 0 && !sr.flipX)
+        {
+            FlipHorizontally();
+        }
     }
 
     void Follow()
