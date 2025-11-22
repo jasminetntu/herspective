@@ -38,9 +38,6 @@ public class Interactable : MonoBehaviour
 
     public void Interact()
     {
-        if (isInRange)
-        {
-            interactAction.Invoke();
-        }
+        interactAction.Invoke();
     }
 }
