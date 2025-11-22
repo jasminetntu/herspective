@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private SpriteRenderer sr;
     private Vector2 movement;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         sr = GetComponentInChildren<SpriteRenderer>(); // sprite on child object
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -21,6 +23,16 @@ public class PlayerMovement : MonoBehaviour
 
         // Set movement vector (X only for now)
         movement = new Vector2(moveX, 0f).normalized;
+
+        //ANIMATIONS
+        if (moveX != 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
 
         // Flip sprite based on direction
         if (moveX > 0.01f)
