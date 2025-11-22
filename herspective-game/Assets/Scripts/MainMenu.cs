@@ -4,6 +4,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject creditsPanel;
+
     void Start()
     {
         
